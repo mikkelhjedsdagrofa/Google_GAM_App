@@ -16,5 +16,24 @@ namespace Google_GAM_App
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listView1.View = View.Details;
+
+            int userid = 0;
+
+            ListViewItem lvwItem = listView1.Items.Add(userid.ToString());
+            lvwItem.SubItems.Add(textBox1.Text);
+            lvwItem.SubItems.Add(textBox2.Text);
+            lvwItem.SubItems.Add(textBox3.Text);
+        }
+
+      
     }
 }
