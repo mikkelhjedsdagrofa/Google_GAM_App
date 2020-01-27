@@ -28,50 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            "",
+            "",
+            "",
+            "",
+            ""}, -1);
+            this.fornavntextBox1 = new System.Windows.Forms.TextBox();
+            this.efternavntextBox2 = new System.Windows.Forms.TextBox();
+            this.upntextBox3 = new System.Windows.Forms.TextBox();
+            this.domainlistBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.Fornavn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Efternavn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.UPN = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._UserListID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.RemoveUser = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Fornavn_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Efternavn_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.UPN_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Email_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // fornavntextBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Fornavn";
+            this.fornavntextBox1.Location = new System.Drawing.Point(12, 11);
+            this.fornavntextBox1.Name = "fornavntextBox1";
+            this.fornavntextBox1.Size = new System.Drawing.Size(142, 20);
+            this.fornavntextBox1.TabIndex = 0;
+            this.fornavntextBox1.Text = "Fornavn";
             // 
-            // textBox2
+            // efternavntextBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(118, 12);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Efternavn";
+            this.efternavntextBox2.Location = new System.Drawing.Point(160, 11);
+            this.efternavntextBox2.Name = "efternavntextBox2";
+            this.efternavntextBox2.Size = new System.Drawing.Size(154, 20);
+            this.efternavntextBox2.TabIndex = 1;
+            this.efternavntextBox2.Text = "Efternavn";
             // 
-            // textBox3
+            // upntextBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(224, 12);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "UPN";
+            this.upntextBox3.Location = new System.Drawing.Point(320, 11);
+            this.upntextBox3.Name = "upntextBox3";
+            this.upntextBox3.Size = new System.Drawing.Size(154, 20);
+            this.upntextBox3.TabIndex = 3;
+            this.upntextBox3.Text = "UPN";
             // 
-            // comboBox1
+            // domainlistBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.domainlistBox1.FormattingEnabled = true;
+            this.domainlistBox1.Items.AddRange(new object[] {
             "dagrofa.dk",
             "dagrofa-logistik.dk",
             "dagrofa.net",
@@ -103,24 +108,15 @@
             "spar.dk",
             "superbest.dk",
             "supergros.dk"});
-            this.comboBox1.Location = new System.Drawing.Point(354, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "Domæne";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(330, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "@";
+            this.domainlistBox1.Location = new System.Drawing.Point(480, 11);
+            this.domainlistBox1.Name = "domainlistBox1";
+            this.domainlistBox1.Size = new System.Drawing.Size(128, 21);
+            this.domainlistBox1.TabIndex = 4;
+            this.domainlistBox1.Text = "Domæne";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(710, 9);
+            this.button1.Location = new System.Drawing.Point(929, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -131,7 +127,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(605, 14);
+            this.label2.Location = new System.Drawing.Point(821, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 13);
             this.label2.TabIndex = 7;
@@ -139,65 +135,76 @@
             // 
             // listView1
             // 
+            this.listView1.CheckBoxes = true;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this._UserListID,
-            this.Fornavn,
-            this.Efternavn,
-            this.UPN,
-            this.RemoveUser});
+            this.Fornavn_header,
+            this.Efternavn_header,
+            this.UPN_header,
+            this.Email_header});
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
+            listViewItem3.StateImageIndex = 0;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem3});
             this.listView1.Location = new System.Drawing.Point(12, 49);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(773, 197);
+            this.listView1.Size = new System.Drawing.Size(992, 197);
             this.listView1.TabIndex = 8;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // Fornavn
+            // Fornavn_header
             // 
-            this.Fornavn.DisplayIndex = 0;
-            this.Fornavn.Text = "Fornavn";
-            this.Fornavn.Width = 100;
+            this.Fornavn_header.Text = "Fornavn";
+            this.Fornavn_header.Width = 175;
             // 
-            // Efternavn
+            // Efternavn_header
             // 
-            this.Efternavn.DisplayIndex = 1;
-            this.Efternavn.Text = "Efternavn";
-            this.Efternavn.Width = 100;
+            this.Efternavn_header.Text = "Efternavn";
+            this.Efternavn_header.Width = 166;
             // 
-            // UPN
+            // UPN_header
             // 
-            this.UPN.DisplayIndex = 2;
-            this.UPN.Text = "UPN";
-            this.UPN.Width = 100;
+            this.UPN_header.Text = "UPN";
+            this.UPN_header.Width = 187;
             // 
-            // _UserListID
+            // Email_header
             // 
-            this._UserListID.DisplayIndex = 4;
-            this._UserListID.Text = "#";
-            this._UserListID.Width = 20;
+            this.Email_header.Text = "E-mail";
+            this.Email_header.Width = 237;
             // 
-            // RemoveUser
+            // listBox1
             // 
-            this.RemoveUser.DisplayIndex = 3;
-            this.RemoveUser.Text = "Remove";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(12, 253);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(600, 82);
+            this.listBox1.TabIndex = 9;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(854, 253);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(149, 23);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Tilføj brugere til GAM";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1016, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.domainlistBox1);
+            this.Controls.Add(this.upntextBox3);
+            this.Controls.Add(this.efternavntextBox2);
+            this.Controls.Add(this.fornavntextBox1);
             this.Name = "Form1";
             this.Text = "Google GAM App";
             this.ResumeLayout(false);
@@ -207,19 +214,19 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox fornavntextBox1;
+        private System.Windows.Forms.TextBox efternavntextBox2;
+        private System.Windows.Forms.TextBox upntextBox3;
+        private System.Windows.Forms.ComboBox domainlistBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader Fornavn;
-        private System.Windows.Forms.ColumnHeader Efternavn;
-        private System.Windows.Forms.ColumnHeader UPN;
-        private System.Windows.Forms.ColumnHeader _UserListID;
-        private System.Windows.Forms.ColumnHeader RemoveUser;
+        private System.Windows.Forms.ColumnHeader Fornavn_header;
+        private System.Windows.Forms.ColumnHeader Efternavn_header;
+        private System.Windows.Forms.ColumnHeader UPN_header;
+        private System.Windows.Forms.ColumnHeader Email_header;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
