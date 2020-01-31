@@ -75,7 +75,9 @@ namespace Google_GAM_App
                 int ii = 1;
                 ii++;
 
-                Console.WriteLine(listView1.Items[i].SubItems[0].Text + " " + 
+                Console.WriteLine(
+                    "gam create user " + 
+                    listView1.Items[i].SubItems[0].Text + " " + 
                     listView1.Items[i].SubItems[1].Text + " " + 
                     listView1.Items[i].SubItems[2].Text + " " + 
                     listView1.Items[i].SubItems[3].Text);
