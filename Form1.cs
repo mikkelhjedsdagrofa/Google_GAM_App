@@ -80,15 +80,15 @@ namespace Google_GAM_App
             }
         }
 
-        public string create_Users_With_GAM(string Fornavn, string Efternavn, String UPN, string domain)
-        {
-            string create_user_string = string.Format("gam create user {0}", Fornavn);
+        //public string create_Users_With_GAM(string Fornavn, string Efternavn, String UPN, string domain)
+        //{
+        //    string create_user_string = string.Format("gam create user {0}", Fornavn);
 
-            listView1
+        //    listView1
 
 
-            return create_user_string;
-        }
+        //    return create_user_string;
+        //}
     }
 }
 
