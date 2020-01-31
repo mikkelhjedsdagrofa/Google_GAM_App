@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "",
             "",
@@ -77,37 +77,37 @@
             // 
             this.domainlistBox1.FormattingEnabled = true;
             this.domainlistBox1.Items.AddRange(new object[] {
-            "dagrofa.dk",
-            "dagrofa-logistik.dk",
-            "dagrofa.net",
-            "dagrofaacademy.dk",
-            "dagrofabornholm.dk",
-            "dagrofahrudvikling.dk",
-            "dagrofakontraktflow.dk",
-            "dgfs.dk",
-            "dgfsystems.dk",
-            "dreisler.dk\t",
-            "foodservicedanmark.dk",
-            "gronbalance.dk",
-            "hkiost.dk",
-            "kiwi.dk",
-            "kiwidanmark.dk",
-            "kkengros.gl",
-            "kobmandshuset.dk",
-            "koedgrossisten.dk",
-            "letkob.net",
-            "meny.dk",
-            "merkurlive.dk",
-            "minkobmand.dk\t",
-            "naerkob.dk",
-            "norddata.dk",
-            "pgcd.dk",
-            "primafrugt.dk",
-            "qgcd.dk",
-            "soerwi.dk",
-            "spar.dk",
-            "superbest.dk",
-            "supergros.dk"});
+            "@dagrofa.dk",
+            "@dagrofa-logistik.dk",
+            "@dagrofa.net",
+            "@dagrofaacademy.dk",
+            "@dagrofabornholm.dk",
+            "@dagrofahrudvikling.dk",
+            "@dagrofakontraktflow.dk",
+            "@dgfs.dk",
+            "@dgfsystems.dk",
+            "@dreisler.dk\t",
+            "@foodservicedanmark.dk",
+            "@gronbalance.dk",
+            "@hkiost.dk",
+            "@kiwi.dk",
+            "@kiwidanmark.dk",
+            "@kkengros.gl",
+            "@kobmandshuset.dk",
+            "@koedgrossisten.dk",
+            "@letkob.net",
+            "@meny.dk",
+            "@merkurlive.dk",
+            "@minkobmand.dk\t",
+            "@naerkob.dk",
+            "@norddata.dk",
+            "@pgcd.dk",
+            "@primafrugt.dk",
+            "@qgcd.dk",
+            "@soerwi.dk",
+            "@spar.dk",
+            "@superbest.dk",
+            "@supergros.dk"});
             this.domainlistBox1.Location = new System.Drawing.Point(480, 11);
             this.domainlistBox1.Name = "domainlistBox1";
             this.domainlistBox1.Size = new System.Drawing.Size(128, 21);
@@ -143,9 +143,9 @@
             this.Email_header});
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            listViewItem3.StateImageIndex = 0;
+            listViewItem1.StateImageIndex = 0;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
+            listViewItem1});
             this.listView1.Location = new System.Drawing.Point(12, 49);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(992, 197);

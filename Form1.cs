@@ -70,16 +70,24 @@ namespace Google_GAM_App
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //Form1 newform1 = new Form1();
-
-            foreach (string item in listView1.Items)
+            for (int i = 0; i < listView1.Items.Count; i++)
             {
-                var drop = item.Split(',');
-                ListViewItem li = new ListViewItem();
-                li.Text = drop[0].Trim();
-                li.SubItems.Add(drop[1].Trim());
-                listView1.Items.Add(li);
+                int ii = 1;
+                ii++;
+
+                Console.WriteLine(listView1.Items[i].SubItems[0].Text + " " + listView1.Items[i].SubItems[1].Text + " " + listView1.Items[i].SubItems[2].Text + " " + listView1.Items[i].SubItems[3].Text);
+
             }
+        }
+
+        public string create_Users_With_GAM(string Fornavn, string Efternavn, String UPN, string domain)
+        {
+            string create_user_string = string.Format("gam create user {0}", Fornavn);
+
+            listView1
+
+
+            return create_user_string;
         }
     }
 }
